@@ -39,14 +39,15 @@ def SetDate(date):
 
 
 def main():
-    start = SetDate(input("Start Date (YYYY/MM/DD):\n"))
-    end = SetDate(input("End Date (YYYY/MM/DD):\n"))
-    print(start, end)
-    location = SetCoordinates(42.7370, -84.4839)
+    start = SetDate(input("Start Date (YYYY/MM/DD): "))
+    end = SetDate(input("\nEnd Date (YYYY/MM/DD): "))
+    lat = int(input("\nInput latitudinal coordinate: "))
+    lon = int(input("\n Input longitudinal coordinate: "))
+    location = SetCoordinates(lat, lon)
     data = Daily(location, start, end)
     data = data.fetch()
     while True:
-        print("Choose option: \n1. Get Max Temperature \n2. Get Minimum Temperature\
+        print("\nChoose option: \n1. Get Max Temperature \n2. Get Minimum Temperature\
             \n3. Get Temperatures below X \n4. Get Temperatures above X \n5. Exit \n")
         value = int(input())
         if value == 1:
