@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather Data Query</h1>
+    <form method="POST">
+        <label for="start_date">Start Date (YYYY-MM-DD):</label>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="end_date">End Date (YYYY-MM-DD):</label>
+        <input type="date" id="end_date" name="end_date" required><br><br>
+
+        <label for="latitude">Latitude:</label>
+        <input type="number" id="latitude" name="latitude" step="any" required><br><br>
+
+        <label for="longitude">Longitude:</label>
+        <input type="number" id="longitude" name="longitude" step="any" required><br><br>
+
+        <label for="option">Choose an option:</label>
+        <select id="option" name="option">
+            <option value="1">Get Max Temperature</option>
+            <option value="2">Get Min Temperature</option>
+            <option value="3">Count Days Below X</option>
+            <option value="4">Count Days Above X</option>
+        </select><br><br>
+
+        <label for="x">X (Optional, for options 3 & 4):</label>
+        <input type="number" id="x" name="x" step="any"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result %}
+    <h2>Result:</h2>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
