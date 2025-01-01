@@ -1,0 +1,20 @@
+2025-01-01T18:57:18.349867000 0.008044s notice: Recursively removing directory /Users/Ziad/Desktop/Outside Coding/ProblemSolving/ToDoApp/rethinkdb_data/tmp
+2025-01-01T18:57:18.351911000 0.010087s notice: Initializing directory /Users/Ziad/Desktop/Outside Coding/ProblemSolving/ToDoApp/rethinkdb_data
+2025-01-01T18:57:18.351992000 0.010167s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/Ziad/Desktop/Outside Coding/ProblemSolving/ToDoApp/rethinkdb_data' did not already exist or is empty.)
+2025-01-01T18:57:18.352010000 0.010185s notice: Running rethinkdb 2.4.4 (arm64-apple-darwin24.0.0) (CLANG 16.0.0 (clang-1600.0.26.3))...
+2025-01-01T18:57:18.357718000 0.015894s notice: Running on Darwin 24.0.0 arm64
+2025-01-01T18:57:18.357775000 0.015951s notice: Loading data from directory /Users/Ziad/Desktop/Outside Coding/ProblemSolving/ToDoApp/rethinkdb_data
+2025-01-01T18:57:18.408602000 0.066778s info: Automatically using cache size of 1166 MB
+2025-01-01T18:57:18.408988000 0.067164s notice: Listening for intracluster connections on port 29015
+2025-01-01T18:57:18.409345000 0.067521s notice: Listening for client driver connections on port 28015
+2025-01-01T18:57:18.409369000 0.067545s notice: Listening for administrative HTTP connections on port 8080
+2025-01-01T18:57:18.409371000 0.067547s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2025-01-01T18:57:18.409372000 0.067548s notice: Listening on driver addresses: 127.0.0.1, ::1
+2025-01-01T18:57:18.409374000 0.067550s notice: Listening on http addresses: 127.0.0.1, ::1
+2025-01-01T18:57:18.409375000 0.067551s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2025-01-01T18:57:18.409377000 0.067553s notice: Server ready, "NASA_Supercomputer_local_fca" bdf10435-0293-49bd-b4a8-3c4d729f0440
+2025-01-01T18:57:35.799882000 17.458050s notice: Server got SIGINT from pid 77812, uid 501; shutting down...
+2025-01-01T18:57:35.800149000 17.458317s notice: Shutting down client connections...
+2025-01-01T18:57:35.800352000 17.458520s notice: All client connections closed.
+2025-01-01T18:57:35.800357000 17.458525s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2025-01-01T18:57:35.800945000 17.459114s notice: Storage engine shut down.

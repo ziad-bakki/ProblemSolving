@@ -1,0 +1,4 @@
+from rethinkdb import RethinkDB
+r = RethinkDB()
+r.connect('localhost', 28015).repl()
+
