@@ -1,10 +1,17 @@
+import os
 import requests
 from urllib.parse import quote
 from math import radians, sin, cos, asin, sqrt
+import json
 
-api = input("Input API key: \n")
-one = input("Input Country 1: \n")
-two = input("Input Country 2: \n")
+with open("apikeys.json", "r") as file:
+    data = json.load(file)
+
+api = data['geoapify_api_key']
+
+
+one = input("Input Country 1: ")
+two = input("\nInput Country 2: ")
 
 # Encode the inputs
 encoded_one = quote(one)
@@ -46,4 +53,4 @@ c = 2 * asin(sqrt(a))
 
 distance = (c * r)
 
-print(f"The distance between {one} and {two} is approximately {round(distance, 2)} KM. \n")
+print(f"\nThe distance between {one} and {two} is approximately {round(distance, 2)} KM. \n")
