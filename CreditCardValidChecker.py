@@ -1,7 +1,7 @@
-"""
-Checks if a credit card number is valid using Luhn's algorithm
-"""
 def IsValid(number):
+    """
+    Checks if a credit card number is valid using Luhn's algorithm
+    """
     number = str(number)
     number = list(number)
     for i in range(0, len(number), 2):
@@ -13,7 +13,6 @@ def IsValid(number):
         return "Valid"
     else:
         return "Invalid"
-
 
 
 number = input("Input card number: \n")

@@ -1,7 +1,9 @@
 """
-Program that calculated the total steps in a collatz conjecture sequence 
+Program that calculated the total steps in a collatz conjecture sequence
 given a positive integer n
 """
+
+
 def CollatzConjecture(n):
     sequence = []
     steps = 0
@@ -14,6 +16,7 @@ def CollatzConjecture(n):
         sequence.append(int(n))
         steps += 1
     return (steps, sequence)
+
 
 number = int(input("Input an integer greater than 1: "))
 collatz = CollatzConjecture(number)
